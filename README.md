@@ -1,36 +1,49 @@
-# Deden
+# DevLens
 
-> Developer • Builder • Security Enthusiast
+> Free, fast developer tools for API, JSON, security, and web debugging.
 
-Hi, I'm **Deden**. I enjoy building web applications, experimenting with AI, and exploring web security.
+DevLens is a client-side developer toolbox designed to make common development tasks fast and frictionless. It is intentionally lightweight: no account, database, or DevLens backend is required for the current MVP.
 
-## About Me
+## Current tools
 
-- Building and experimenting with web applications
-- Interested in AI-powered tools and developer utilities
-- Exploring web security and bug bounty
-- Always learning and improving
+- JSON Formatter
+- JSON Diff
+- JSONPath Tester
+- API Request Builder
+- cURL Converter
+- HTTP Status Codes
+- HTTP Headers Analyzer
+- JWT Decoder
+- Security Headers reference
+- URL Toolkit
+- SQL Formatter
 
-## Tech & Interests
+## Principles
 
-`JavaScript` `TypeScript` `Node.js` `React` `Next.js` `AI` `Web Security`
+- Free to use
+- Client-side processing whenever possible
+- No automatic persistence of tool input
+- No DevLens API proxy in the MVP
+- Minimal dependencies
+- Scalable category and tool structure
 
-## Projects
+## Development
 
-Some of my projects and experiments:
+This MVP is a dependency-free static web app. Serve the repository with any static server, or use the included npm scripts.
 
-- **Dewcode** — Web development project
-- **OpenCode Web Security Agent** — Security-focused AI tooling
-- **Waifu AI Chat** — AI chat experiment
-- **Voice Room** — Real-time communication experiment
-- **Bug Bounty** — Security research and experimentation
+```bash
+npm run build
+npm run preview
+```
 
-## GitHub
+## Adding a tool
 
-You can find my projects and experiments here:
+Keep tool metadata in `src/app.js` for the current MVP. Future iterations should extract the registry into dedicated modules so categories, routes, keywords, and related tools remain data-driven as the toolbox grows.
 
-**https://github.com/heydeden**
+## Deployment
 
----
+The repository is intended to work with static hosts such as Netlify. AppDeploy can be used for preview/QA deployments.
 
-*Building, breaking, learning, and building again.*
+## License
+
+See `LICENSE`.
